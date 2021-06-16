@@ -24,4 +24,5 @@ wine app.exe
 ```
 ### Источники
 https://husl.ru/questions/941756  
-https://www.securitylab.ru/analytics/521188.php
+https://www.securitylab.ru/analytics/521188.php  
+https://www.winehq.org/
