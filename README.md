@@ -5,7 +5,7 @@
 ```
 sudo apt install wine-stable
 ```
-https://www.winehq.org/
+https://www.winehq.org/   
 Установка компилятора:
 ```
 sudo apt install mingw-w64
