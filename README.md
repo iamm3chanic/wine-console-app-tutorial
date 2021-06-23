@@ -32,6 +32,7 @@ wine app.exe
 sudo apt install iconv ttf-mscorefonts-installer
 ```
 https://pro-self.ru/blog/pselfin/smena-kodirovki-faylov-v-ubuntu-tak-zhe-iconv-i-bolshie-fayli
+## 6. Создание Makefile
 ### Источники
 https://husl.ru/questions/941756  
 https://www.securitylab.ru/analytics/521188.php  
