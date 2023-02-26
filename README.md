@@ -33,6 +33,24 @@ sudo apt install iconv ttf-mscorefonts-installer
 ```
 https://pro-self.ru/blog/pselfin/smena-kodirovki-faylov-v-ubuntu-tak-zhe-iconv-i-bolshie-fayli
 ## 6. Создание Makefile
+Makefile полезен для создания больших проектов и может выглядеть так:
+```
+CC = /usr/local/bin/x86_64-w64-mingw32-gcc
+CFLAGS = -W -Wall -O0 -O1 -O2 -g
+LIBS = -mwindows
+
+app.exe: main.o file1.o file2.o Makefile
+	$(CC) $(CFLAGS) -o app.exe main.o file1.o file2.o $(LIBS)
+main.o: main.cpp include1.h include2.h Makefile
+	$(CC) $(CFLAGS) -c main.cpp $(LIBS)
+file1.o: file1.cpp include1.h Makefile
+	$(CC) $(CFLAGS) -c file1.cpp $(LIBS)
+file2.o: file2.cpp include2.h Makefile
+	$(CC) $(CFLAGS) -c file2.cpp $(LIBS)
+clean:
+	rm app.exe *.o 
+
+```
 ### Источники
 https://husl.ru/questions/941756  
 https://www.securitylab.ru/analytics/521188.php  
